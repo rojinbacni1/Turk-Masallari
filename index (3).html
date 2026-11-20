@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dilden Dile: Türk Masalları Derlemesi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="gece">Gece</button>
+<div class="kilim"></div>
+
+<div id="anasayfa">
+  <header class="kapak">
+    <h1>Dilden Dile</h1>
+    <p class="alt">Türk Masalları Derlemesi</p>
+    <p class="bir"><svg class="lale kucuk" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8C28 24 26 48 50 64C74 48 72 24 50 8Z"/><path d="M50 22V64"/><path d="M50 92V64"/><path d="M50 84C34 82 24 72 22 58C38 60 47 68 50 78"/><path d="M50 84C66 82 76 72 78 58C62 60 53 68 50 78"/></svg>Bir varmış, bir yokmuş…<svg class="lale kucuk ayna" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8C28 24 26 48 50 64C74 48 72 24 50 8Z"/><path d="M50 22V64"/><path d="M50 92V64"/><path d="M50 84C34 82 24 72 22 58C38 60 47 68 50 78"/><path d="M50 84C66 82 76 72 78 58C62 60 53 68 50 78"/></svg></p>
+    <div class="secim">
+      <button id="rastgele">Bir masal seç bana</button>
+      <nav class="turler" id="turler" aria-label="Masal türleri"></nav>
+    </div>
+  </header>
+  <div class="duzen">
+    <aside class="kitap" aria-label="Kitaplığım">
+      <button class="kitapdugme" data-tur="devam">Devam ettiklerim <span id="nDevam">0</span></button>
+      <button class="kitapdugme" data-tur="bitti">Bitirdiklerim <span id="nBitti">0</span></button>
+      <button class="kitapdugme" data-tur="fav">Favorilerim <span id="nFav">0</span></button>
+    </aside>
+    <main><div class="raf" id="raf"></div></main>
+  </div>
+</div>
+
+<section id="kitapSayfa" hidden>
+  <header class="kapak">
+    <h1>Dilden Dile</h1>
+    <p class="alt" id="kitapBaslik"></p>
+    <div class="secim"><button id="kitapGeri" class="ikincil">Ana sayfa</button></div>
+  </header>
+  <div class="duzen tek"><div class="raf d4" id="kitapRaf"></div></div>
+</section>
+
+<article id="okuma" hidden>
+  <div class="ust">
+    <button id="geri">Ana sayfa</button>
+    <div class="araclar">
+      <button id="kucult" aria-label="Yazıyı küçült">A−</button>
+      <button id="buyut" aria-label="Yazıyı büyüt">A+</button>
+      <button id="favori">Favorilere ekle</button>
+      <button id="dinle">Dinle</button>
+      <button id="okudum">Okudum</button>
+    </div>
+  </div>
+  <div class="sayfa">
+    <img id="resim" alt="">
+    <h2 id="baslik"></h2>
+    <div id="tur"></div>
+    <div id="sure"></div>
+    <div class="kilim"></div>
+    <div id="metin"></div>
+    <p id="kaynak"></p>
+  </div>
+  <div class="gezin">
+    <button id="onceki">Önceki masal</button>
+    <button id="sonraki">Sonraki masal</button>
+  </div>
+</article>
+
+<footer>
+  <div class="kilim"></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

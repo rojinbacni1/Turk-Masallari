@@ -1,0 +1,142 @@
+/* Dilden Dile: Türk Masalları Derlemesi - stil dosyası */
+  :root{
+    --zemin:#8e1b1b; --koyu:#17110e; --petrol:#173b3f;
+    --altin:#d9b878; --krem:#f3e7c9; --murekkep:#2b1a12;
+    --sayfa:#f3e7c9; --vurgu:#8e1b1b; --boyut:1.2rem;
+  }
+  body.gece{
+    --zemin:#3b0f12; --sayfa:#1a1411; --murekkep:#efe3c8; --vurgu:#e0bd72;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--krem);background-color:var(--zemin);
+       font-family:Georgia,"Palatino Linotype",serif;line-height:1.75}
+  button{font:inherit;cursor:pointer}
+  [hidden]{display:none !important}
+  :focus-visible{outline:3px solid var(--altin);outline-offset:2px}
+
+  /* Kilim şeridi */
+  .kilim{height:22px;background-color:var(--koyu);border-top:2px solid var(--altin);border-bottom:2px solid var(--altin);
+         background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22'%3E%3Cpath d='M22 2L38 11L22 20L6 11Z' fill='none' stroke='%23d9b878' stroke-width='2'/%3E%3Cpath d='M22 7L30 11L22 15L14 11Z' fill='%23d9b878'/%3E%3C/svg%3E");
+         background-repeat:repeat-x;background-position:center}
+
+  /* Ana sayfa girişi */
+  .kapak{text-align:center;max-width:72rem;margin:0 auto;padding:2.2rem 1.5rem .4rem}
+  .bir{margin:.3rem 0 0;font-size:1.15rem;font-style:italic;color:var(--altin)}
+  .bir .lale{margin:0 .7rem}
+  .secim{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.8rem;margin-top:1.4rem}
+  .panel{border:3px double var(--altin);background:rgba(0,0,0,.28);padding:1.2rem;border-radius:3px}
+  .lale{width:64px;stroke:var(--altin);fill:none;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+  .lale.ayna{transform:scaleX(-1)}
+  .lale.kucuk{width:28px;vertical-align:middle;stroke-width:4}
+  .hilal{width:84px;fill:var(--altin)}
+  .kapak h1{margin:.2rem 0 0;font-size:clamp(2.4rem,7vw,4.2rem);color:var(--altin);
+            letter-spacing:.05em;text-shadow:0 3px 0 rgba(0,0,0,.35)}
+  .kapak .alt{margin:0;font-size:1.3rem;font-style:italic}
+  .giris{margin:.6rem 0 0;font-size:1.05rem}
+  #rastgele{padding:.55rem 1.2rem;background:var(--altin);color:var(--koyu);border:0;
+            border-radius:4px;font-weight:bold;box-shadow:0 3px 0 rgba(0,0,0,.4)}
+  #rastgele:hover{background:var(--krem)}
+  .ikincil{padding:.55rem 1.1rem;background:rgba(0,0,0,.25);color:var(--krem);
+           border:1px solid var(--altin);border-radius:4px}
+  .ikincil:hover{background:var(--altin);color:var(--koyu)}
+  .rozet{position:absolute;top:16px;right:16px;z-index:3;background:var(--altin);color:var(--koyu);
+         font-style:normal;font-size:.8rem;padding:.1rem .6rem;border-radius:10px;
+         font-family:"Segoe UI",system-ui,sans-serif}
+  #sure{text-align:center;font-size:.95rem;opacity:.8;font-family:"Segoe UI",system-ui,sans-serif}
+
+  /* Tür süzgeci */
+  .turler{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin:0}
+  .turler button{padding:.4rem 1rem;background:rgba(0,0,0,.25);color:var(--krem);
+                 border:1px solid var(--altin);border-radius:20px}
+  .turler button.aktif{background:var(--krem);color:var(--koyu)}
+
+  /* Masal kapakları */
+  .duzen{max-width:72rem;margin:1.6rem auto 3rem;padding:0 1.5rem}
+  .raf{display:flex;flex-wrap:wrap;justify-content:center;gap:1.4rem}
+  .raf>.kart,.raf>.kutu{width:calc((100% - 4.2rem)/4)}
+
+  /* Sol taraf: kitaplığım (devam ettiklerim, bitirdiklerim, favorilerim) */
+  .kitap{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;margin-bottom:1.6rem}
+  .kitap section{margin-bottom:1.6rem}
+  .kitap h3{margin:0 0 .5rem;color:var(--altin);font-size:1.05rem;letter-spacing:.04em;
+            border-bottom:1px solid var(--altin);padding-bottom:.3rem}
+  .kitap ul{list-style:none;margin:0;padding:0}
+  .kitap li button{width:100%;text-align:left;background:none;border:0;color:var(--krem);
+                   padding:.4rem 0;font:inherit;line-height:1.35}
+  .kitap li button:hover{color:var(--altin)}
+  .kitap small{font-family:"Segoe UI",system-ui,sans-serif;opacity:.85}
+  .kitap .bos{opacity:.7;font-style:italic;font-size:.95rem}
+  .cubuk{height:6px;background:rgba(0,0,0,.4);border-radius:3px;margin:.3rem 0 .15rem;overflow:hidden}
+  .cubuk i{display:block;height:100%;background:var(--altin)}
+
+  .kitap .kitapdugme{display:flex;justify-content:center;align-items:center;gap:.7rem;
+        margin:0;padding:.7rem 1rem;background:rgba(0,0,0,.28);color:var(--krem);
+        border:1px solid var(--altin);border-radius:4px;font:inherit}
+  .kitap .kitapdugme:hover{background:var(--altin);color:var(--koyu)}
+  .kitapdugme span{background:var(--altin);color:var(--koyu);border-radius:10px;padding:0 .6rem;
+        font-family:"Segoe UI",system-ui,sans-serif;font-size:.85rem}
+  .duzen.tek{grid-template-columns:1fr}
+  .kutu{display:flex;flex-direction:column;gap:.6rem}
+  .durum{text-align:center;font-family:"Segoe UI",system-ui,sans-serif;font-size:.95rem}
+  .bosyazi{grid-column:1/-1;text-align:center;font-style:italic}
+
+  /* Gece düğmesi: sağ üst köşede, her sayfada görünür */
+  #gece{position:fixed;top:34px;right:1rem;z-index:6;padding:.4rem .9rem;background:var(--koyu);
+        color:var(--altin);border:1px solid var(--altin);border-radius:20px;
+        font-family:"Segoe UI",system-ui,sans-serif}
+  #gece:hover{background:var(--altin);color:var(--koyu)}
+  .kart{position:relative;aspect-ratio:3/4;display:flex;flex-direction:column;
+        justify-content:flex-end;text-align:center;padding:0;border:0;border-radius:4px;
+        color:var(--krem);overflow:hidden;box-shadow:0 8px 16px rgba(0,0,0,.45)}
+  .kart.siyah{background:var(--koyu)}
+  .kart.petrol{background:var(--petrol)}
+  .kart::before{content:"";position:absolute;inset:8px;border:2px solid var(--altin);
+        border-radius:2px;pointer-events:none;z-index:2}
+  .kart svg{position:absolute;top:12%;left:21%;width:58%;stroke:var(--altin);fill:none;stroke-width:3;
+        stroke-linejoin:round;stroke-linecap:round}
+  .kart img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .kart span{position:relative;z-index:1;padding:3rem .9rem 1.3rem;
+        background:linear-gradient(transparent,rgba(23,17,14,.94) 65%)}
+  .kart strong{font-size:1.15rem;line-height:1.3;color:var(--altin);display:block}
+  .kart small{display:block;font-family:"Segoe UI",system-ui,sans-serif;opacity:.9}
+  .kart:hover{transform:translateY(-4px)}
+
+  /* Okuma sayfası */
+  #okuma{max-width:46rem;margin:0 auto;padding:3.4rem 1.2rem 3rem}
+  .ust{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem;
+       font-family:"Segoe UI",system-ui,sans-serif}
+  .ust button,.gezin button{padding:.45rem .9rem;background:rgba(0,0,0,.3);color:var(--krem);
+       border:1px solid var(--altin);border-radius:6px}
+  .ust button:hover,.gezin button:hover{background:var(--altin);color:var(--koyu)}
+  .araclar{display:flex;gap:.5rem}
+  .sayfa{background:var(--sayfa);color:var(--murekkep);border:3px double var(--altin);
+         outline:2px solid var(--vurgu);outline-offset:-12px;padding:2.6rem 2.2rem;
+         border-radius:3px;box-shadow:0 10px 24px rgba(0,0,0,.5)}
+  #resim{display:block;margin:0 auto 1.2rem;width:min(15rem,70%);aspect-ratio:3/4;object-fit:cover;
+         border:3px solid var(--altin);box-shadow:0 4px 10px rgba(0,0,0,.35)}
+  .sayfa h2{margin:0;text-align:center;color:var(--vurgu);font-size:2rem}
+  #tur{text-align:center;font-style:italic}
+  .sayfa .kilim{height:14px;background-size:auto 14px;margin:.8rem 0 1.4rem;border-width:1px}
+  #metin{font-size:var(--boyut)}
+  #metin p{margin:0 0 1em}
+  #metin h3{margin:1.8em 0 .4em;color:var(--vurgu);font-size:1.25rem}
+  #metin p:first-of-type::first-letter{float:left;font-size:3.6em;line-height:.85;
+         padding:.08em .12em 0 0;color:var(--vurgu)}
+  #kaynak{overflow-wrap:anywhere;margin:1.5rem 0 0;padding-top:.6rem;border-top:1px solid var(--altin);font-size:.9rem;
+          font-style:italic;opacity:.85}
+  #kaynak:empty{display:none}
+  .gezin{display:flex;justify-content:space-between;margin-top:1.5rem;
+         font-family:"Segoe UI",system-ui,sans-serif}
+
+  footer{text-align:center;font-style:italic}
+  footer p{margin:0;padding:1.2rem 1rem 1.6rem;background:var(--koyu);color:var(--altin);
+           display:flex;justify-content:center;align-items:center;gap:1rem}
+  .sinir{margin:0 auto;max-width:72rem;height:0}
+
+
+  @media (max-width:900px){.raf>.kart,.raf>.kutu{width:calc((100% - 1.4rem)/2)}}
+  @media (max-width:420px){
+    .raf{gap:.8rem}.raf>.kart,.raf>.kutu{width:calc((100% - .8rem)/2)}.duzen{padding:0 .8rem}
+    .kart strong{font-size:1rem}
+    .sayfa{padding:1.8rem 1.3rem}
+  }
