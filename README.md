@@ -2,8 +2,8 @@
 
 Medipol Üniversitesi, Görsel İletişim Tasarımı, **Programlamaya Giriş** dersi vize projesi.
 
-**Hazırlayan:** [Ad Soyad]
-**Video sunumu (YouTube):** [Bağlantı buraya eklenecek]
+**Hazırlayan:** Rojin Esma Bacni
+**Video sunumu (YouTube):** https://youtu.be/Gs1zI0n4LDw
 
 ## Proje nedir?
 
